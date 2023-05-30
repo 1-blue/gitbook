@@ -2,9 +2,9 @@
 description: 댓글에 좋아요 엔드포인트
 ---
 
-# /like/comment
+# 💙 /like/comment
 
-{% swagger method="post" path="/like/comment" baseUrl="https://blegram.vercel.app/api" summary="특정 댓글에 좋아요 추가 요청" expanded="true" %}
+{% swagger method="post" path="/api/like/comment" baseUrl="https://blegram.vercel.app" summary="특정 댓글에 좋아요 추가 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -17,7 +17,7 @@ description: 댓글에 좋아요 엔드포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="commentIdx" type="string" required="true" %}
+{% swagger-parameter in="body" name="commentIdx" type="number" required="true" %}
 댓글의 식별자 ( idx )
 {% endswagger-parameter %}
 
@@ -69,7 +69,7 @@ description: 댓글에 좋아요 엔드포인트
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="delete" path="/like/comment" baseUrl="https://blegram.vercel.app/api" summary="특정 댓글에 좋아요 제거 요청" expanded="true" %}
+{% swagger method="delete" path="/api/like/comment" baseUrl="https://blegram.vercel.app" summary="특정 댓글에 좋아요 제거 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -82,7 +82,7 @@ description: 댓글에 좋아요 엔드포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="commentIdx" type="number" %}
+{% swagger-parameter in="query" name="commentIdx" type="number" required="true" %}
 댓글의 식별자 ( idx )
 {% endswagger-parameter %}
 

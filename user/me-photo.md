@@ -2,11 +2,11 @@
 description: 로그인한 유저 프로필 이미지 수정 엔드포인트
 ---
 
-# /me/photo
+# 🙍 /me/photo
 
-{% swagger method="patch" path="/me/photo" baseUrl="https://blegram.vercel.app/api" summary="로그인한 유저 비밀번호 수정 요청" expanded="true" %}
+{% swagger method="patch" path="/api/me/photo" baseUrl="https://blegram.vercel.app" summary="로그인한 유저 프로필 이미지 수정 요청" expanded="true" %}
 {% swagger-description %}
-
+기존 프로필 이미지는 제거하지 않고 다른 폴더에 저장함
 {% endswagger-description %}
 
 {% swagger-parameter in="cookie" required="true" name="bat" type="JWT" %}
@@ -41,10 +41,6 @@ description: 로그인한 유저 프로필 이미지 수정 엔드포인트
     "message": "로그인후에 접근해주세요!"
 }
 ```
-{% endswagger-response %}
-
-{% swagger-response status="403: Forbidden" description="현재 비밀번호 불일치" %}
-
 {% endswagger-response %}
 
 {% swagger-response status="405: Method Not Allowed" description="접근할 수 없는 메서드" %}

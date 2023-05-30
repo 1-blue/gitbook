@@ -2,9 +2,9 @@
 description: 단일 이미지 관련 엔드포인트
 ---
 
-# /photo
+# 🌇 /photo
 
-{% swagger method="post" path="" baseUrl="https://blegram.vercel.app/api/photo" summary="단일 이미지 생성 요청" expanded="true" %}
+{% swagger method="post" path="/api/photo" baseUrl="https://blegram.vercel.app" summary="단일 이미지 생성 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -21,7 +21,7 @@ description: 단일 이미지 관련 엔드포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-response status="200: OK" description="게시글 생성 성공" %}
+{% swagger-response status="200: OK" description="서명된 URL 얻기 성공" %}
 {% code lineNumbers="true" %}
 ```json
 {

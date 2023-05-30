@@ -2,11 +2,11 @@
 description: 특정 유저 관련 엔드포인트
 ---
 
-# /post
+# 📘 /post
 
-{% swagger method="post" path="" baseUrl="https://blegram.vercel.app/api/post" summary="게시글 생성 요청" expanded="true" %}
+{% swagger method="post" path="/api/post" baseUrl="https://blegram.vercel.app" summary="게시글 생성 요청" expanded="true" %}
 {% swagger-description %}
-
+content에서 해시태그 추출해서 해시태그 생성 및 등록
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="content" type="string" required="true" %}
@@ -88,7 +88,7 @@ description: 특정 유저 관련 엔드포인트
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="delete" path="" baseUrl="https://blegram.vercel.app/api/post" summary="게시글 삭제 요청" expanded="true" %}
+{% swagger method="delete" path="/api/post" baseUrl="https://blegram.vercel.app" summary="게시글 삭제 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -101,7 +101,7 @@ description: 특정 유저 관련 엔드포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="path" required="true" type="string" name="idx" %}
+{% swagger-parameter in="query" name="idx" type="string" required="true" %}
 삭제할 게시글 식별자
 {% endswagger-parameter %}
 

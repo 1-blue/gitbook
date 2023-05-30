@@ -1,12 +1,12 @@
 ---
-description: 추천 검색어 요청
+description: 추천 검색어 요청 엔드포인트
 ---
 
-# /search/suggested
+# 🕸 /search/suggested
 
-{% swagger method="get" path="/suggested" baseUrl="https://blegram.vercel.app/api/search" summary="추천 검색어 요청 ( 해시태그 || 유저 닉네임 )" expanded="true" %}
+{% swagger method="get" path="/api/search/suggested" baseUrl="https://blegram.vercel.app" summary="추천 검색어 요청 ( 해시태그 || 유저 닉네임 )" expanded="true" %}
 {% swagger-description %}
-
+게시글의 해시태그 or 유저 닉네임이  입력한 것을 포함하면 추천 검색어로 필터
 {% endswagger-description %}
 
 {% swagger-parameter in="cookie" required="false" name="bat" type="JWT" %}

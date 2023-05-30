@@ -2,9 +2,9 @@
 description: 팔로워들 관련 엔드포인트
 ---
 
-# /followers
+# 👀 /followers
 
-{% swagger method="get" path="" baseUrl="https://blegram.vercel.app/api/followers" summary="특정 유저의 팔로워 리스트 요청" expanded="true" %}
+{% swagger method="get" path="/api/followers" baseUrl="https://blegram.vercel.app" summary="특정 유저의 팔로워 리스트 요청" expanded="true" %}
 {% swagger-description %}
 쿠키를 주면 팔로워들과 본인과의 관계를 알 수 있음
 {% endswagger-description %}
@@ -17,7 +17,7 @@ description: 팔로워들 관련 엔드포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="followerIdx" type="string" required="true" %}
+{% swagger-parameter in="query" name="followerIdx" type="number" required="true" %}
 특정 유저의 식별자( idx )
 {% endswagger-parameter %}
 

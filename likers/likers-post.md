@@ -2,9 +2,9 @@
 description: 게시글에 좋아요 누른 사람들 엔드포인트
 ---
 
-# /likers/post
+# 👍 /likers/post
 
-{% swagger method="post" path="/likers/post" baseUrl="https://blegram.vercel.app/api" summary="특정 게시글에 좋아요 누른 사람들 요청" expanded="true" %}
+{% swagger method="post" path="/api/likers/post" baseUrl="https://blegram.vercel.app" summary="특정 게시글에 좋아요 누른 사람들 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}

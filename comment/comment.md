@@ -1,10 +1,10 @@
 ---
-description: 댓글 관련 엔드 포인트
+description: 댓글 관련 엔드포인트
 ---
 
-# /comment
+# 📃 /comment
 
-{% swagger method="post" path="" baseUrl="https://blegram.vercel.app/api/comment" summary="특정 게시글에 댓글 생성 요청" expanded="true" %}
+{% swagger method="post" path="/api/comment" baseUrl="https://blegram.vercel.app" summary="특정 게시글에 댓글 생성 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -17,11 +17,11 @@ description: 댓글 관련 엔드 포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="postIdx" type="string" required="true" %}
+{% swagger-parameter in="body" name="postIdx" type="number" required="true" %}
 게시글의 식별자 ( idx )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="content" type="string" required="true" %}
+{% swagger-parameter in="body" name="content" type="string" required="true" %}
 댓글 내용
 {% endswagger-parameter %}
 
@@ -92,7 +92,7 @@ description: 댓글 관련 엔드 포인트
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="patch" path="" baseUrl="https://blegram.vercel.app/api/comment" summary="특정 게시글의 댓글 수정 요청" expanded="true" %}
+{% swagger method="patch" path="/api/comment" baseUrl="https://blegram.vercel.app" summary="특정 게시글의 댓글 수정 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -105,11 +105,11 @@ description: 댓글 관련 엔드 포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="commentIdx" type="string" required="true" %}
+{% swagger-parameter in="body" name="commentIdx" type="string" %}
 댓글의식별자 ( idx )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="content" type="string" required="true" %}
+{% swagger-parameter in="body" name="content" type="string" %}
 수정할댓글 내용
 {% endswagger-parameter %}
 
@@ -160,7 +160,7 @@ description: 댓글 관련 엔드 포인트
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="delete" path="" baseUrl="https://blegram.vercel.app/api/comment" summary="특정 게시글의 댓글 제거 요청" expanded="true" %}
+{% swagger method="delete" path="/api/comment" baseUrl="https://blegram.vercel.app" summary="특정 게시글의 댓글 제거 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -181,7 +181,7 @@ description: 댓글 관련 엔드 포인트
 {% code lineNumbers="true" %}
 ```json
 {
-    "message": "댓글을 수정했습니다."
+    "message": "댓글을 삭제했습니다."
 }
 ```
 {% endcode %}

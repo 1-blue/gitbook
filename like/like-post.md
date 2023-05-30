@@ -2,9 +2,9 @@
 description: 게시글에 좋아요 엔드포인트
 ---
 
-# /like/post
+# 💚 /like/post
 
-{% swagger method="post" path="/like/post" baseUrl="https://blegram.vercel.app/api" summary="특정 게시글에 좋아요 추가 요청" expanded="true" %}
+{% swagger method="post" path="/api/like/post" baseUrl="https://blegram.vercel.app" summary="특정 게시글에 좋아요 추가 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -69,7 +69,7 @@ description: 게시글에 좋아요 엔드포인트
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="delete" path="/like/post" baseUrl="https://blegram.vercel.app/api" summary="특정 게시글에 좋아요 제거 요청" expanded="true" %}
+{% swagger method="delete" path="/api/like/post" baseUrl="https://blegram.vercel.app" summary="특정 게시글에 좋아요 제거 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}

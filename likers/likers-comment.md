@@ -2,9 +2,9 @@
 description: 특정 댓글에 좋아요 누른 사람들 엔드포인트
 ---
 
-# /likers/comment
+# 👍 /likers/comment
 
-{% swagger method="post" path="/likers/comment" baseUrl="https://blegram.vercel.app/api" summary="특정 댓글에 좋아요 누른 사람들 요청" expanded="true" %}
+{% swagger method="post" path="/api/likers/comment" baseUrl="https://blegram.vercel.app" summary="특정 댓글에 좋아요 누른 사람들 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -17,7 +17,7 @@ description: 특정 댓글에 좋아요 누른 사람들 엔드포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="commentIdx" type="string" required="true" %}
+{% swagger-parameter in="body" name="commentIdx" type="number" required="true" %}
 댓글의 식별자 ( idx )
 {% endswagger-parameter %}
 

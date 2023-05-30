@@ -2,9 +2,9 @@
 description: 로그아웃 관련 엔드포인트
 ---
 
-# /logout
+# 🔒 /logout
 
-{% swagger method="post" path="" baseUrl="https://blegram.vercel.app/api/logout" summary="로그아웃 요청" expanded="true" %}
+{% swagger method="post" path="/api/logout" baseUrl="https://blegram.vercel.app" summary="로그아웃 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -22,6 +22,7 @@ description: 로그아웃 관련 엔드포인트
 ```json
 {
     "message": "로그아웃되었습니다.\n로그인 페이지로 이동됩니다."
+    // + bat, brt 제거
 }
 ```
 {% endcode %}
@@ -32,6 +33,14 @@ description: 로그아웃 관련 엔드포인트
 {% endswagger-response %}
 
 {% swagger-response status="401: Unauthorized" description="유효하지 않은 토큰 ( 잘못된, 만료된 )" %}
+```json
+{
+    "message": "로그인후에 접근해주세요!"
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="403: Forbidden" description="로그인하지 않은 상태에서 접근" %}
 ```json
 {
     "message": "로그인후에 접근해주세요!"
@@ -55,3 +64,4 @@ description: 로그아웃 관련 엔드포인트
 ```
 {% endswagger-response %}
 {% endswagger %}
+

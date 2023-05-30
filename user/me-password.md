@@ -2,11 +2,11 @@
 description: 로그인한 유저 비밀번호 수정 엔드포인트
 ---
 
-# /me/password
+# 💆 /me/password
 
-{% swagger method="patch" path="/me/password" baseUrl="https://blegram.vercel.app/api" summary="로그인한 유저 비밀번호 수정 요청" expanded="true" %}
+{% swagger method="patch" path="/api/me/password" baseUrl="https://blegram.vercel.app" summary="로그인한 유저 비밀번호 수정 요청" expanded="true" %}
 {% swagger-description %}
-
+비밀번호 수정 성공 시 로그아웃
 {% endswagger-description %}
 
 {% swagger-parameter in="cookie" required="true" name="bat" type="JWT" %}
@@ -26,13 +26,7 @@ description: 로그인한 유저 비밀번호 수정 엔드포인트
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="유저 정보 수정 성공" %}
-{% code lineNumbers="true" %}
-```json
-{
-    "message": "\"apple\"님의 데이터를 수정했습니다."
-}
-```
-{% endcode %}
+로그아웃됨
 {% endswagger-response %}
 
 {% swagger-response status="302: Found" description="인증 토큰 만료 ( 재발급 )" %}

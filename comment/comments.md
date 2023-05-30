@@ -1,10 +1,10 @@
 ---
-description: 댓글들 관련 엔드 포인트
+description: 댓글들 관련 엔드포인트
 ---
 
-# /comments
+# 📃 /comments
 
-{% swagger method="get" path="" baseUrl="https://blegram.vercel.app/api/comments" summary="특정 게시글의 댓글들 요청" expanded="true" %}
+{% swagger method="get" path="/api/comments" baseUrl="https://blegram.vercel.app" summary="특정 게시글의 댓글들 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -17,7 +17,7 @@ description: 댓글들 관련 엔드 포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="postIdx" type="string" required="true" %}
+{% swagger-parameter in="query" name="postIdx" type="number" required="true" %}
 게시글의 식별자 ( idx )
 {% endswagger-parameter %}
 

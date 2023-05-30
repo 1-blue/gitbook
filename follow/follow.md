@@ -2,9 +2,9 @@
 description: 팔로우/언팔로우 관련 엔드포인트
 ---
 
-# /follow
+# 👀 /follow
 
-{% swagger method="post" path="" baseUrl="https://blegram.vercel.app/api/follow" summary="특정 유저에게 팔로우 요청" expanded="true" %}
+{% swagger method="post" path="/api/follow" baseUrl="https://blegram.vercel.app" summary="특정 유저에게 팔로우 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -17,7 +17,7 @@ description: 팔로우/언팔로우 관련 엔드포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="userIdx" type="string" required="true" %}
+{% swagger-parameter in="body" name="userIdx" type="number" %}
 팔로우할 유저의 식별자 ( idx )
 {% endswagger-parameter %}
 
@@ -25,23 +25,9 @@ description: 팔로우/언팔로우 관련 엔드포인트
 {% code lineNumbers="true" %}
 ```json
 {
-    "message": "특정 유저의 팔로워들을 가져왔습니다.",
-    "followers": [
-        {
-            "idx": 1,
-            "avatar": "development/photos/cat.jpg",
-            "name": "유저 - 1",
-            "nickname": "apple",
-            // 해당 유저의 팔로워들
-            "followers": [
-                {
-                    "followerIdx": 1,
-                    "followingIdx": 3
-                }
-            ]
-        }
-        // ...
-    ]
+    "message": "팔로우했습니다.",
+    "followerIdx": 3,
+    "followingIdx": 1
 }
 ```
 {% endcode %}
@@ -84,7 +70,7 @@ description: 팔로우/언팔로우 관련 엔드포인트
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="delete" path="" baseUrl="https://blegram.vercel.app/api/follow" summary="특정 유저에게 언팔로우 요청" %}
+{% swagger method="delete" path="/api/follow" baseUrl="https://blegram.vercel.app" summary="특정 유저에게 언팔로우 요청" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -105,23 +91,9 @@ description: 팔로우/언팔로우 관련 엔드포인트
 {% code lineNumbers="true" %}
 ```json
 {
-    "message": "특정 유저의 팔로워들을 가져왔습니다.",
-    "followers": [
-        {
-            "idx": 1,
-            "avatar": "development/photos/cat.jpg",
-            "name": "유저 - 1",
-            "nickname": "apple",
-            // 해당 유저의 팔로워들
-            "followers": [
-                {
-                    "followerIdx": 1,
-                    "followingIdx": 3
-                }
-            ]
-        }
-        // ...
-    ]
+    "message": "언팔로우했습니다.",
+    "followerIdx": 3,
+    "followingIdx": 1
 }
 ```
 {% endcode %}

@@ -2,9 +2,9 @@
 description: 북마크 관련 엔드포인트
 ---
 
-# /bookmark
+# 🏷 /bookmark
 
-{% swagger method="post" path="" baseUrl="https://blegram.vercel.app/api/bookmark" summary="특정 게시글에 북마크 요청" expanded="true" %}
+{% swagger method="post" path="/api/bookmark" baseUrl="https://blegram.vercel.app" summary="특정 게시글에 북마크 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -17,7 +17,7 @@ description: 북마크 관련 엔드포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="postIdx" type="string" required="true" %}
+{% swagger-parameter in="body" name="postIdx" type="number" required="true" %}
 게시글의 식별자 ( idx )
 {% endswagger-parameter %}
 
@@ -70,7 +70,7 @@ description: 북마크 관련 엔드포인트
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="delete" path="" baseUrl="https://blegram.vercel.app/api/bookmark" summary="특정 게시글에 북마크 요청" expanded="true" %}
+{% swagger method="delete" path="/api/bookmark" baseUrl="https://blegram.vercel.app" summary="특정 게시글에 북마크 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -83,7 +83,7 @@ description: 북마크 관련 엔드포인트
 리프레쉬 토큰을 갖는 쿠키 ( 7일 )
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="postIdx" type="string" required="true" %}
+{% swagger-parameter in="query" name="postIdx" type="number" required="true" %}
 게시글의 식별자 ( idx )
 {% endswagger-parameter %}
 

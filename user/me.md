@@ -2,9 +2,9 @@
 description: 로그인한 유저 엔드포인트
 ---
 
-# /me
+# 💁 /me
 
-{% swagger method="get" path="/me" baseUrl="https://blegram.vercel.app/api" summary="로그인한 유저 정보 요청" expanded="true" %}
+{% swagger method="get" path="/api/me" baseUrl="https://blegram.vercel.app" summary="로그인한 유저 정보 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -69,7 +69,7 @@ description: 로그인한 유저 엔드포인트
 {% endswagger-response %}
 {% endswagger %}
 
-{% swagger method="patch" path="/me" baseUrl="https://blegram.vercel.app/api" summary="로그인한 유저 정보 수정 요청" expanded="true" %}
+{% swagger method="patch" path="/api/me" baseUrl="https://blegram.vercel.app" summary="로그인한 유저 정보 수정 요청" expanded="true" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -137,7 +137,11 @@ description: 로그인한 유저 엔드포인트
 {% endswagger-response %}
 
 {% swagger-response status="409: Conflict" description="이메일 || 별칭 || 휴대폰 번호 중복" %}
-
+```json
+{
+    "message": "별칭이 이미 존재합니다." // 이메일, 휴대폰 번호
+}
+```
 {% endswagger-response %}
 
 {% swagger-response status="500: Internal Server Error" description="서버측 문제 ( 코드상의 문제 )" %}

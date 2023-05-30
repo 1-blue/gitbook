@@ -1,8 +1,8 @@
 ---
-description: 해시태그를 갖는 게시글들 검색
+description: 해시태그를 갖는 게시글들 검색 엔드포인트
 ---
 
-# /search/post/{hashtag}
+# 🕸 /search/post/{hashtag}
 
 {% swagger method="get" path="/post" baseUrl="https://blegram.vercel.app/api/search" summary="해시태그를 갖는 게시글들 검색 요청" expanded="true" %}
 {% swagger-description %}
