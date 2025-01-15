@@ -7,11 +7,8 @@
 * [Quickstart](getting-started/quickstart.md)
 * [Publish your docs](getting-started/publish-your-docs.md)
 
-## Basics
+## Copy of Getting Started
 
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [공용](copy-of-getting-started/quickstart.md)
+* [프론트엔드](copy-of-getting-started/quickstart-1.md)
+* [백엔드](copy-of-getting-started/quickstart-2.md)
