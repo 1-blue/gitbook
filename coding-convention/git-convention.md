@@ -1,5 +1,5 @@
 ---
-description: 커밋과 브랜치 컨벤션
+description: 커밋과 브랜치 컨벤션에 대해 작성한 문서
 icon: github
 cover: >-
   https://images.unsplash.com/photo-1630514969818-94aefc42ec47?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwzfHxnaXRodWJ8ZW58MHx8fHwxNzQyMDkyMDg2fDA&ixlib=rb-4.0.3&q=85
