@@ -1,5 +1,4 @@
 ---
-icon: bullseye-arrow
 description: 프론드엔드와 백엔드 모두 TypeScript를 사용하는 경우를 예시로 한다.
 cover: >-
   https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwxfHxjb2Rpbmd8ZW58MHx8fHwxNzM2OTA4ODk3fDA&ixlib=rb-4.0.3&q=85
@@ -14,8 +13,6 @@ coverY: 0
 1. 타입의 경우 `Prisma`에서 만든 모델 타입에 `TypeScript Utility`를 이용해서 만듦
 2. [`routes`](https://github.com/1-blue/story-dict/blob/master/apps/fe/src/constants/routes.ts)에서 모든 경로에 대해 정의해두고 다른곳에서 재사용 ( [`navbar`](https://github.com/1-blue/story-dict/blob/master/apps/fe/src/constants/navRoutes.ts), [`sitemap`](https://github.com/1-blue/story-dict/blob/master/apps/fe/src/app/sitemap.ts) 등 )
 {% endhint %}
-
-
 
 ## 공통 규칙
 

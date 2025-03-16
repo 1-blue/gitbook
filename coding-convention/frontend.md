@@ -1,5 +1,4 @@
 ---
-icon: bullseye-arrow
 description: 프론트엔드의 코딩 컨벤션
 cover: >-
   https://images.unsplash.com/photo-1667372393086-9d4001d51cf1?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHwyfHxiYWNrZW5kfGVufDB8fHx8MTczNjkyODk5Nnww&ixlib=rb-4.0.3&q=85
