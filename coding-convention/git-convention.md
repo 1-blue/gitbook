@@ -22,7 +22,7 @@ layout:
 
 # 깃 컨벤션
 
-### 📕 커밋 컨벤션
+## 📕 커밋 컨벤션
 
 <pre><code>접두사:[domain] 내용
 <strong>ex) feat:[/home] 썸네일 미리보기 모달 구현
@@ -30,7 +30,7 @@ layout:
 </strong><strong># 전체에 영향이 간다면 [all], 도메인이 여러개면 ,로 구분
 </strong></code></pre>
 
-#### 0️⃣ 접두사
+### 0️⃣ 접두사
 
 * feat: 기능 구현
 * hotfix: 급한 버그 수정
@@ -39,7 +39,7 @@ layout:
 * chore: 간단한 코드 수정 ( .eslintrc 등 )
 * docs: 문서 수정 ( README.md 등 )
 
-### 📗브랜치 컨벤션
+## 📗 브랜치 컨벤션
 
 1. 실서버 브랜치: master
 2. 테스트 서버 브랜치: development
@@ -47,7 +47,7 @@ layout:
 4. 코드 수정 브랜치: refactor/고유번호-수정\_내용
 5. 버그 수정 브랜치: hotfix/고유번호-버그\_내용
 
-#### 0️⃣ 접두사
+### 0️⃣ 접두사
 
 * feat: 기능 구현
 * hotfix: 급한 버그 수정
@@ -56,6 +56,6 @@ layout:
 * chore: 간단한 코드 수정
 * docs: 문서 수정
 
-#### 1️⃣ 고유 번호
+### 1️⃣ 고유 번호
 
 발급된 티켓의 번호 ( ex) TSK-1 )
